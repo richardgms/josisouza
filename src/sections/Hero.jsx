@@ -34,7 +34,7 @@ const Hero = () => {
                         rel="noopener noreferrer"
                         className="btn-primary inline-block"
                     >
-                        Viver a Experiência Josi Souza
+                        Viver a Experiência
                     </a>
                 </motion.div>
             </div>

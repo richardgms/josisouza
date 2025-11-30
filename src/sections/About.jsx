@@ -10,7 +10,7 @@ const About = () => {
 
                     {/* Image Side */}
                     <motion.div
-                        className="w-full md:w-5/12 sticky top-24"
+                        className="w-full md:w-5/12"
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
