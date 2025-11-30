@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #A5907B;
+  --color-secondary: #D4CABE;
+  --color-accent: #806248;
+  --color-dark: #50311D;
+  --color-black: #0B090C;
+  --color-background: #F9F8F6;
+  --color-surface: #E4DFD7;
+  --color-text: #181716;
+
+  --font-sans: 'Lato', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-white rounded-full transition-all duration-300 hover:bg-primary/90 hover:shadow-lg uppercase tracking-wider text-sm font-medium;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border border-primary text-primary rounded-full transition-all duration-300 hover:bg-primary hover:text-white uppercase tracking-wider text-sm font-medium;
+  }
+}
