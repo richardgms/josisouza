@@ -3,13 +3,13 @@ import { Instagram, MessageCircle, MapPin } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer id="contato" className="bg-[#f5f2ed] pt-20 pb-10 border-t border-primary/10">
+        <footer id="contato" className="bg-[#f5f2ed] pt-12 pb-8 md:pt-20 md:pb-10 border-t border-primary/10">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 text-center md:text-left">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-10 md:mb-16 text-center md:text-left">
 
                     {/* Brand */}
                     <div>
-                        <img src="/monogram.svg" alt="Josi Souza" className="h-16 w-auto mb-6" />
+                        <img src="/monogram.svg" alt="Josi Souza" className="h-12 md:h-16 w-auto mb-4 md:mb-6 mx-auto md:mx-0" />
                         <p className="text-text/60 text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
                             Beleza leve, real e com propósito. Um espaço pensado para o seu equilíbrio e bem-estar.
                         </p>

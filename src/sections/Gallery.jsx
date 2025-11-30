@@ -14,7 +14,7 @@ const images = [
 
 const Gallery = () => {
     return (
-        <section id="portfolio" className="py-20 bg-background">
+        <section id="portfolio" className="py-20 bg-secondary/10">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-serif text-primary mb-4">Resultados que Inspiram</h2>

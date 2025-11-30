@@ -4,9 +4,9 @@ import { ScanFace, Sparkles, ShieldCheck } from 'lucide-react';
 
 const About = () => {
     return (
-        <section id="sobre" className="py-20 md:py-32 bg-background">
+        <section id="sobre" className="py-16 md:py-32 bg-background">
             <div className="container mx-auto px-4">
-                <div className="flex flex-col md:flex-row items-start gap-16">
+                <div className="flex flex-col md:flex-row items-start gap-12 md:gap-16">
 
                     {/* Image Side */}
                     <motion.div
@@ -16,9 +16,9 @@ const About = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="relative aspect-square bg-secondary/30 rounded-sm overflow-hidden">
+                        <div className="relative aspect-[4/5] md:aspect-square bg-secondary/30 rounded-sm overflow-hidden max-w-md mx-auto md:max-w-none">
                             <img
-                                src="/josi-souza-profile.png"
+                                src="/josi-souza-profile2.png"
                                 alt="Josi Souza"
                                 className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
                             />
@@ -33,12 +33,12 @@ const About = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-primary mb-8 leading-tight">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-primary mb-6 md:mb-8 leading-tight text-center md:text-left">
                             Muito mais que estética:<br />
                             <span className="text-text">um encontro com sua autoestima.</span>
                         </h2>
 
-                        <div className="text-text/80 leading-relaxed font-light text-lg mb-12">
+                        <div className="text-text/80 leading-relaxed font-light text-lg mb-10 md:mb-12 text-center md:text-left">
                             <p className="mb-6">
                                 Minha trajetória é marcada pela busca incessante pela excelência. Acredito que a beleza deve ser leve, real e, acima de tudo, intencional. Não se trata apenas de um procedimento, mas de um método pensado para você.
                             </p>
@@ -47,7 +47,7 @@ const About = () => {
                         {/* The Method Grid */}
                         <div className="grid grid-cols-1 gap-8 mb-12">
                             {/* Step 1 */}
-                            <div className="flex gap-6 group">
+                            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 group items-center sm:items-start text-center sm:text-left">
                                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                                     <ScanFace className="w-6 h-6" />
                                 </div>
@@ -60,7 +60,7 @@ const About = () => {
                             </div>
 
                             {/* Step 2 */}
-                            <div className="flex gap-6 group">
+                            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 group items-center sm:items-start text-center sm:text-left">
                                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                                     <Sparkles className="w-6 h-6" />
                                 </div>
@@ -73,23 +73,23 @@ const About = () => {
                             </div>
 
                             {/* Step 3 */}
-                            <div className="flex gap-6 group">
+                            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 group items-center sm:items-start text-center sm:text-left">
                                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-serif text-primary mb-2">Execução & Cuidado</h3>
+                                    <h3 className="text-xl font-serif text-primary mb-2">Conforto & Qualidade</h3>
                                     <p className="text-text/70 text-sm leading-relaxed">
-                                        Técnica precisa, produtos de alta performance e biossegurança rigorosa. Um ambiente seguro para você relaxar.
+                                        Um ambiente acolhedor e elegante, com produtos de alta performance para garantir uma experiência única e memorável.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="flex items-center gap-6">
+                        <div className="flex flex-col sm:flex-row items-center gap-6 justify-center md:justify-start">
                             <a
                                 href="#portfolio"
-                                className="btn-outline inline-block"
+                                className="btn-outline inline-block w-full sm:w-auto text-center"
                             >
                                 Conheça meu Propósito
                             </a>

@@ -29,11 +29,11 @@ const Experience = () => {
                             </p>
 
                             <p className="italic text-primary/80 border-l-2 border-primary/20 pl-4 my-6">
-                                "Cada detalhe importa. Aqui, a biossegurança caminha junto com o conforto."
+                                "Cada detalhe importa. Aqui, sua singularidade é nossa prioridade."
                             </p>
 
                             <p>
-                                Biossegurança de nível hospitalar aliada ao conforto de um spa. Cada ferramenta é esterilizada e cada produto é escolhido pela qualidade.
+                                Um espaço acolhedor e elegante, que se dedica em realçar a beleza natural através de técnicas personalizadas e produtos de alta qualidade.
                             </p>
                         </div>
                     </motion.div>
