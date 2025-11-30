@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://josisouza.beauty/sitemap.xml

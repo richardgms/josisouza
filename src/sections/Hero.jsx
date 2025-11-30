@@ -7,7 +7,7 @@ const Hero = () => {
             {/* Background Image & Overlay */}
             <div className="absolute inset-0 z-0 bg-[#F5F2ED]">
                 <img
-                    src="/IMG-20251130-WA0045.jpg"
+                    src="/hero-bg-detail.jpg"
                     alt="Josi Souza Beauty - Detalhes"
                     className="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-multiply"
                 />

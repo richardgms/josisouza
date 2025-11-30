@@ -18,7 +18,7 @@ const About = () => {
                     >
                         <div className="relative aspect-square bg-secondary/30 rounded-sm overflow-hidden">
                             <img
-                                src="/Josi.png"
+                                src="/josi-souza-profile.png"
                                 alt="Josi Souza"
                                 className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
                             />

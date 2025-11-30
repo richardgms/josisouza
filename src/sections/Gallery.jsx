@@ -2,14 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const images = [
-    { src: '/Screenshot_20251130_045329_Instagram.jpg', alt: 'Transparência e Leveza' },
-    { src: '/IMG-20251130-WA0082.jpg', alt: 'Acabamento Natural' },
-    { src: '/IMG-20251130-WA0050.jpg', alt: 'Design Sofisticado' },
-    { src: '/IMG-20251130-WA0051.jpg', alt: 'Detalhes que Encantam' },
-    { src: '/IMG-20251130-WA0055.jpg', alt: 'Elegância Clássica' },
-    { src: '/Screenshot_20251130_045424_Instagram.jpg', alt: 'Cuidado Profissional' },
-    { src: '/Screenshot_20251130_045429_Instagram.jpg', alt: 'Arte e Técnica' },
-    { src: '/Screenshot_20251130_045434_Instagram.jpg', alt: 'Beleza Real' },
+    { src: '/gallery-transparencia.jpg', alt: 'Transparência e Leveza' },
+    { src: '/gallery-natural-finish.jpg', alt: 'Acabamento Natural' },
+    { src: '/gallery-sophisticated.jpg', alt: 'Design Sofisticado' },
+    { src: '/gallery-details.jpg', alt: 'Detalhes que Encantam' },
+    { src: '/gallery-classic-elegance.jpg', alt: 'Elegância Clássica' },
+    { src: '/gallery-professional-care.jpg', alt: 'Cuidado Profissional' },
+    { src: '/gallery-art-technique.jpg', alt: 'Arte e Técnica' },
+    { src: '/gallery-real-beauty.jpg', alt: 'Beleza Real' },
 ];
 
 const Gallery = () => {
