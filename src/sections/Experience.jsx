@@ -48,10 +48,10 @@ const Experience = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
                             <div className="aspect-[3/4] overflow-hidden rounded-sm">
-                                <img src="/experience-treatment.jpg" alt="Atendimento Josi Souza" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                                <img src="/experience-treatment.webp" alt="Atendimento Josi Souza" loading="lazy" width="800" height="1067" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                             </div>
                             <div className="aspect-square overflow-hidden rounded-sm">
-                                <img src="/experience-space-detail.jpg" alt="Detalhes do Espaço" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                                <img src="/experience-space-detail.webp" alt="Detalhes do Espaço" loading="lazy" width="800" height="800" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                             </div>
                         </motion.div>
 
@@ -63,10 +63,10 @@ const Experience = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                         >
                             <div className="aspect-square overflow-hidden rounded-sm">
-                                <img src="/experience-tools.jpg" alt="Ferramentas Organizadas" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                                <img src="/experience-tools.webp" alt="Ferramentas Organizadas" loading="lazy" width="800" height="800" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                             </div>
                             <div className="aspect-[3/4] overflow-hidden rounded-sm">
-                                <img src="/experience-products.jpg" alt="Produtos de Qualidade" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                                <img src="/experience-products.webp" alt="Produtos de Qualidade" loading="lazy" width="800" height="1067" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                             </div>
                         </motion.div>
 
@@ -78,10 +78,10 @@ const Experience = () => {
                             transition={{ duration: 0.8, delay: 0.6 }}
                         >
                             <div className="aspect-[3/4] overflow-hidden rounded-sm">
-                                <img src="/experience-clean-environment.jpg" alt="Ambiente Clean" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                                <img src="/experience-clean-environment.webp" alt="Ambiente Clean" loading="lazy" width="800" height="1067" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                             </div>
                             <div className="aspect-square overflow-hidden rounded-sm">
-                                <img src="/experience-special-care.jpg" alt="Cuidados Especiais" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                                <img src="/experience-special-care.webp" alt="Cuidados Especiais" loading="lazy" width="800" height="800" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                             </div>
                         </motion.div>
                     </div>

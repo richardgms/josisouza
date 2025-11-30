@@ -18,8 +18,11 @@ const About = () => {
                     >
                         <div className="relative aspect-[4/5] md:aspect-square bg-secondary/30 rounded-sm overflow-hidden max-w-md mx-auto md:max-w-none">
                             <img
-                                src="/josi-souza-profile2.png"
+                                src="/josi-souza-profile2.webp"
                                 alt="Josi Souza"
+                                loading="lazy"
+                                width="800"
+                                height="1000"
                                 className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
                             />
                         </div>

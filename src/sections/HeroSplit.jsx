@@ -27,8 +27,10 @@ const HeroSplit = () => {
                         >
                             <div className="w-32 h-40 md:w-48 md:h-64 rounded-full overflow-hidden border-4 border-background shadow-xl">
                                 <img
-                                    src="/josi-souza-profile.png"
+                                    src="/josi-souza-profile.webp"
                                     alt="Josi Souza"
+                                    width="1080"
+                                    height="1350"
                                     className="w-full h-full object-cover"
                                 />
                             </div>

@@ -2,14 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const images = [
-    { src: '/gallery-transparencia.jpg', alt: 'Transparência e Leveza' },
-    { src: '/gallery-natural-finish.jpg', alt: 'Acabamento Natural' },
-    { src: '/gallery-sophisticated.jpg', alt: 'Design Sofisticado' },
-    { src: '/gallery-details.jpg', alt: 'Detalhes que Encantam' },
-    { src: '/gallery-classic-elegance.jpg', alt: 'Elegância Clássica' },
-    { src: '/gallery-professional-care.jpg', alt: 'Cuidado Profissional' },
-    { src: '/gallery-art-technique.jpg', alt: 'Arte e Técnica' },
-    { src: '/gallery-real-beauty.jpg', alt: 'Beleza Real' },
+    { src: '/gallery-transparencia.webp', alt: 'Transparência e Leveza' },
+    { src: '/gallery-natural-finish.webp', alt: 'Acabamento Natural' },
+    { src: '/gallery-sophisticated.webp', alt: 'Design Sofisticado' },
+    { src: '/gallery-details.webp', alt: 'Detalhes que Encantam' },
+    { src: '/gallery-classic-elegance.webp', alt: 'Elegância Clássica' },
+    { src: '/gallery-professional-care.webp', alt: 'Cuidado Profissional' },
+    { src: '/gallery-art-technique.webp', alt: 'Arte e Técnica' },
+    { src: '/gallery-real-beauty.webp', alt: 'Beleza Real' },
 ];
 
 const Gallery = () => {
@@ -36,6 +36,9 @@ const Gallery = () => {
                             <img
                                 src={img.src}
                                 alt={img.alt}
+                                loading="lazy"
+                                width="800"
+                                height="800"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">

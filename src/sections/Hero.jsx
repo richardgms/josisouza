@@ -8,8 +8,9 @@ const Hero = () => {
             {/* Background Image & Overlay */}
             <div className="absolute inset-0 z-0 bg-[#F5F2ED]">
                 <img
-                    src="/hero-bg-detail.jpg"
+                    src="/hero-bg-detail.webp"
                     alt="Josi Souza Beauty - Detalhes"
+                    fetchPriority="high"
                     className="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-multiply"
                 />
                 <img src="/monogram.svg" alt="" className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[140%] md:w-[55%] opacity-[0.03] md:opacity-7 pointer-events-none z-40" />
