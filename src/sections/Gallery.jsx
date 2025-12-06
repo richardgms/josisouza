@@ -2,17 +2,49 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const images = [
-    { src: '/gallery-transparencia.webp', alt: 'Transparência e Leveza' },
-    { src: '/gallery-natural-finish.webp', alt: 'Acabamento Natural' },
-    { src: '/gallery-sophisticated.webp', alt: 'Design Sofisticado' },
-    { src: '/gallery-details.webp', alt: 'Detalhes que Encantam' },
-    { src: '/gallery-classic-elegance.webp', alt: 'Elegância Clássica' },
-    { src: '/gallery-professional-care.webp', alt: 'Cuidado Profissional' },
-    { src: '/gallery-art-technique.webp', alt: 'Arte e Técnica' },
-    { src: '/gallery-real-beauty.webp', alt: 'Beleza Real' },
+    // Unhas Naturais
+    { src: '/gallery-transparencia.webp', alt: 'Transparência e Leveza', category: 'natural' },
+    { src: '/gallery-natural-finish.webp', alt: 'Acabamento Natural', category: 'natural' },
+    { src: '/gallery-real-beauty.webp', alt: 'Beleza Real', category: 'natural' },
+    { src: '/gallery-professional-care.webp', alt: 'Cuidado Profissional', category: 'natural' },
+    // Unhas Decoradas
+    { src: '/gallery-sophisticated.webp', alt: 'Design Sofisticado', category: 'decorated' },
+    { src: '/gallery-details.webp', alt: 'Detalhes que Encantam', category: 'decorated' },
+    { src: '/gallery-classic-elegance.webp', alt: 'Elegância Clássica', category: 'decorated' },
+    { src: '/gallery-art-technique.webp', alt: 'Arte e Técnica', category: 'decorated' },
 ];
 
 const Gallery = () => {
+    const naturalImages = images.filter(img => img.category === 'natural');
+    const decoratedImages = images.filter(img => img.category === 'decorated');
+
+    const ImageGrid = ({ items }) => (
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {items.map((img, index) => (
+                <motion.div
+                    key={img.src}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    className="relative aspect-square overflow-hidden rounded-sm group cursor-pointer"
+                >
+                    <img
+                        src={img.src}
+                        alt={img.alt}
+                        loading="lazy"
+                        width="800"
+                        height="800"
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span className="text-white font-serif tracking-widest text-sm uppercase">Ver mais</span>
+                    </div>
+                </motion.div>
+            ))}
+        </div>
+    );
+
     return (
         <section id="portfolio" className="py-20 bg-secondary/10">
             <div className="container mx-auto px-4">
@@ -23,32 +55,23 @@ const Gallery = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {images.map((img, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="relative aspect-square overflow-hidden rounded-sm group cursor-pointer"
-                        >
-                            <img
-                                src={img.src}
-                                alt={img.alt}
-                                loading="lazy"
-                                width="800"
-                                height="800"
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            />
-                            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span className="text-white font-serif tracking-widest text-sm uppercase">Ver mais</span>
-                            </div>
-                        </motion.div>
-                    ))}
+                {/* Unhas Naturais Section */}
+                <div className="mb-16">
+                    <h3 className="text-xl md:text-2xl font-serif text-primary/80 text-center mb-8 tracking-wide">
+                        Unhas Naturais
+                    </h3>
+                    <ImageGrid items={naturalImages} />
                 </div>
 
-                <div className="text-center mt-12">
+                {/* Unhas Decoradas Section */}
+                <div>
+                    <h3 className="text-xl md:text-2xl font-serif text-primary/80 text-center mb-8 tracking-wide">
+                        Unhas Decoradas
+                    </h3>
+                    <ImageGrid items={decoratedImages} />
+                </div>
+
+                <div className="text-center mt-16">
                     <a
                         href="https://instagram.com/josisouza.beauty"
                         target="_blank"

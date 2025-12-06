@@ -24,7 +24,7 @@ const Hero = () => {
                     className="flex flex-col items-center"
                 >
                     <h2 className="text-xs md:text-base uppercase tracking-[0.3em] text-text/60 mb-6 md:mb-6">
-                        Especialista em Design de Sobrancelhas & Estética Natural
+                        Estética & Bem-estar
                     </h2>
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-primary mb-10 md:mb-10 leading-[1.1]">
                         Sua beleza natural,<br />

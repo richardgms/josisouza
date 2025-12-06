@@ -54,7 +54,6 @@ const HeroSplit = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             className="font-sans text-sm md:text-lg tracking-[0.2em] text-text uppercase"
                         >
-                            Beauty
                         </motion.span>
                         <motion.span
                             initial={{ y: 20, opacity: 0 }}
@@ -62,7 +61,7 @@ const HeroSplit = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             className="font-serif text-lg md:text-2xl italic text-accent"
                         >
-                            Nail Design
+                            Beauty
                         </motion.span>
                     </div>
 
