@@ -32,7 +32,7 @@ const Hero = () => {
                     </h1>
 
                     <a
-                        href="https://wa.me/5583996492447"
+                        href="https://wa.me/5583986209170"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-primary inline-block"

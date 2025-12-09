@@ -80,7 +80,7 @@ const Header = () => {
 
                     {/* Mobile CTA (Right) */}
                     <a
-                        href="https://wa.me/5583996492447"
+                        href="https://wa.me/5583986209170"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="md:hidden text-primary p-2 -mr-2"
@@ -138,7 +138,7 @@ const Header = () => {
 
                     <div className="mt-auto relative z-10">
                         <a
-                            href="https://wa.me/5583996492447"
+                            href="https://wa.me/5583986209170"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="block w-full text-center py-4 border border-primary text-primary hover:bg-primary hover:text-white rounded-none uppercase tracking-widest text-sm font-bold transition-all duration-300"

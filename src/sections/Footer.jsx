@@ -21,7 +21,7 @@ const Footer = () => {
                         <ul className="space-y-4 text-text/70 text-sm">
                             <li className="flex items-center justify-center md:justify-start gap-3">
                                 <MessageCircle className="w-4 h-4 text-primary" />
-                                <a href="https://wa.me/5583996492447" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">(83) 99649-2447</a>
+                                <a href="https://wa.me/5583986209170" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">+55 83 98620-9170</a>
                             </li>
                             <li className="flex items-center justify-center md:justify-start gap-3">
                                 <Instagram className="w-4 h-4 text-primary" />

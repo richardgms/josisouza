@@ -111,7 +111,7 @@ const Services = () => {
                 </div>
 
                 <div className="text-center mt-12 md:mt-16">
-                    <a href="https://wa.me/5583996492447" target="_blank" rel="noopener noreferrer" className="btn-primary shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                    <a href="https://wa.me/5583986209170" target="_blank" rel="noopener noreferrer" className="btn-primary shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
                         Reservar meu Momento
                     </a>
                 </div>
