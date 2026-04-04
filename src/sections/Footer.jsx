@@ -29,7 +29,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center justify-center md:justify-start gap-3">
                                 <MapPin className="w-4 h-4 text-primary" />
-                                <span>Rua Severino Antônio da Silva, 492<br />Colinas do Sul 2, João Pessoa - PB</span>
+                                <span>João Pessoa / Santa Rita - PB</span>
                             </li>
                         </ul>
                     </div>

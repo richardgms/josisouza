@@ -13,7 +13,7 @@ const faqs = [
     },
     {
         question: "Onde fica localizado o espaço?",
-        answer: "Estamos situados no coração de João Pessoa. O endereço detalhado, bem como orientações de chegada, são enviados após a confirmação do seu agendamento."
+        answer: "Atendemos nas regiões de João Pessoa e Santa Rita. O endereço exato ou local de atendimento é enviado após a confirmação do seu agendamento."
     },
     {
         question: "Qual a durabilidade do alongamento em gel?",
