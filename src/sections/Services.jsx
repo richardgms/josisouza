@@ -1,24 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { EyebrowIcon, SpaIcon, NailIcon } from '../components/CustomIcons';
+import { SpaIcon, NailIcon } from '../components/CustomIcons';
 
 const services = [
-    {
-        category: "Sobrancelhas",
-        icon: EyebrowIcon,
-        items: [
-            {
-                title: "Design Reconstrutivo",
-                description: "Valorização de cada fio existente, respeitando o formato natural. Técnica egípcia (linha) ou pinça.",
-                price: "R$ 25,00"
-            },
-            {
-                title: "Design com Tintura",
-                description: "Pigmentação dos fios ou da pele para realçar o olhar. Duração de 20 a 30 dias.",
-                price: "R$ 40,00"
-            }
-        ]
-    },
     {
         category: "Spa & Cuidados",
         icon: SpaIcon,
@@ -26,17 +10,22 @@ const services = [
             {
                 title: "Spa dos Pés",
                 description: "Hidratação profunda, remoção de células mortas e massagem. Inclui cutilagem.",
-                price: "R$ 80,00"
+                price: "R$ 100,00"
             },
             {
-                title: "Pé e Mão Tradicional",
-                description: "Cutilagem delicada e esmaltação perfeita.",
-                price: "R$ 30,00 cada"
+                title: "Pé Tradicional",
+                description: "Cutilagem delicada e esmaltação perfeita para os pés.",
+                price: "R$ 35,00"
+            },
+            {
+                title: "Mão Tradicional",
+                description: "Cutilagem delicada e esmaltação perfeita para as mãos.",
+                price: "R$ 35,00"
             },
             {
                 title: "Combo Mão e Pé",
                 description: "Cuidado completo para mãos e pés de uma só vez.",
-                price: "R$ 50,00"
+                price: "R$ 60,00"
             }
         ]
     },
@@ -47,14 +36,32 @@ const services = [
             {
                 title: "Alongamento em Gel",
                 description: "Unhas longas, resistentes e com acabamento impecável.",
-                price: "R$ 130,00",
-                subPrice: "Manutenção: R$ 90,00"
+                price: "R$ 150,00"
+            },
+            {
+                title: "Manutenção Natural",
+                description: "Manutenção do alongamento com acabamento natural.",
+                price: "R$ 100,00"
+            },
+            {
+                title: "Manutenção Esmaltada",
+                description: "Manutenção do alongamento com esmaltação inclusa.",
+                price: "R$ 120,00"
             },
             {
                 title: "Banho em Gel",
                 description: "Camada protetora para fortalecer unhas naturais.",
-                price: "R$ 90,00",
-                subPrice: "Esmaltação: R$ 50,00"
+                price: "R$ 120,00"
+            },
+            {
+                title: "Esmaltação em Gel",
+                description: "Esmaltação duradoura com brilho intenso e acabamento impecável.",
+                price: "R$ 60,00"
+            },
+            {
+                title: "Blindagem",
+                description: "Proteção para unhas naturais com acabamento delicado.",
+                price: "R$ 50,00"
             }
         ]
     }

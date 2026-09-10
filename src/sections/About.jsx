@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ScanFace, Sparkles, ShieldCheck } from 'lucide-react';
+import { ScanFace, ShieldCheck } from 'lucide-react';
 
 const About = () => {
     return (
@@ -58,19 +58,6 @@ const About = () => {
                                     <h3 className="text-xl font-serif text-primary mb-2">Análise Personalizada</h3>
                                     <p className="text-text/70 text-sm leading-relaxed">
                                         Escuta ativa e entendimento profundo do seu estilo, rotina e desejos. Nada é padrão, tudo é sobre você.
-                                    </p>
-                                </div>
-                            </div>
-
-                            {/* Step 2 */}
-                            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 group items-center sm:items-start text-center sm:text-left">
-                                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                                    <Sparkles className="w-6 h-6" />
-                                </div>
-                                <div>
-                                    <h3 className="text-xl font-serif text-primary mb-2">Visagismo Estratégico</h3>
-                                    <p className="text-text/70 text-sm leading-relaxed">
-                                        Mapeamento facial técnico para harmonizar traços naturais, realçando o que você tem de melhor sem perder a essência.
                                     </p>
                                 </div>
                             </div>
