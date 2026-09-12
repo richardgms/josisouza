@@ -51,7 +51,7 @@ const services = [
             {
                 title: "Banho em Gel",
                 description: "Camada protetora para fortalecer unhas naturais.",
-                price: "R$ 120,00"
+                price: "R$ 100,00"
             },
             {
                 title: "Esmaltação em Gel",
