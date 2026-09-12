@@ -18,12 +18,12 @@ const About = () => {
                     >
                         <div className="relative aspect-[4/5] md:aspect-square bg-secondary/30 rounded-sm overflow-hidden max-w-md mx-auto md:max-w-none">
                             <img
-                                src="/josi-souza-about.png"
+                                src="/josi-souza-about.webp"
                                 alt="Josi Souza"
                                 loading="lazy"
                                 width="1121"
                                 height="1403"
-                                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+                                className="w-full h-full object-cover object-[50%_62%] hover:scale-105 transition-transform duration-700"
                             />
                         </div>
                     </motion.div>
