@@ -21,8 +21,8 @@ const About = () => {
                                 src="/josi-souza-about.webp"
                                 alt="Josi Souza"
                                 loading="lazy"
-                                width="1121"
-                                height="1403"
+                                width="1024"
+                                height="1280"
                                 className="w-full h-full object-cover object-[50%_62%] hover:scale-105 transition-transform duration-700"
                             />
                         </div>

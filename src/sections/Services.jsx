@@ -15,12 +15,12 @@ const services = [
             {
                 title: "Pé Tradicional",
                 description: "Cutilagem delicada e esmaltação perfeita para os pés.",
-                price: "R$ 35,00"
+                price: "R$ 40,00"
             },
             {
                 title: "Mão Tradicional",
                 description: "Cutilagem delicada e esmaltação perfeita para as mãos.",
-                price: "R$ 35,00"
+                price: "R$ 40,00"
             },
             {
                 title: "Combo Mão e Pé",
