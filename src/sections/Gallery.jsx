@@ -57,7 +57,7 @@ const Gallery = () => {
 
                 {/* Unhas Naturais Section */}
                 <div className="mb-16">
-                    <h3 className="text-xl md:text-2xl font-serif text-primary/80 text-center mb-8 tracking-wide">
+                    <h3 className="text-xl md:text-2xl font-serif text-primary text-center mb-8 tracking-wide">
                         Unhas Naturais
                     </h3>
                     <ImageGrid items={naturalImages} />
@@ -65,7 +65,7 @@ const Gallery = () => {
 
                 {/* Unhas Decoradas Section */}
                 <div>
-                    <h3 className="text-xl md:text-2xl font-serif text-primary/80 text-center mb-8 tracking-wide">
+                    <h3 className="text-xl md:text-2xl font-serif text-primary text-center mb-8 tracking-wide">
                         Unhas Decoradas
                     </h3>
                     <ImageGrid items={decoratedImages} />

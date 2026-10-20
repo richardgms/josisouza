@@ -10,7 +10,7 @@ const Footer = () => {
                     {/* Brand */}
                     <div>
                         <img src="/monogram.svg" alt="Josi Souza" width="64" height="64" loading="lazy" className="h-12 md:h-16 w-auto mb-4 md:mb-6 mx-auto md:mx-0" />
-                        <p className="text-text/60 text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
+                        <p className="text-text/70 text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
                             Beleza leve, real e com propósito. Um espaço pensado para o seu equilíbrio e bem-estar.
                         </p>
                     </div>
@@ -45,7 +45,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="border-t border-primary/10 pt-8 text-center text-xs text-text/40 uppercase tracking-wider">
+                <div className="border-t border-primary/10 pt-8 text-center text-xs text-text/70 uppercase tracking-wider">
                     <p>&copy; {new Date().getFullYear()} Josi Souza. Mais que estética, uma experiência de cuidado.</p>
                 </div>
             </div>

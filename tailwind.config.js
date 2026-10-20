@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         // Palette extracted from user images
-        primary: '#A5907B',    // Elegant Beige/Taupe (Main Brand Color)
+        primary: '#7F6B57',    // Elegant Beige/Taupe (Main Brand Color)
         secondary: '#D4CABE',  // Light Beige (Backgrounds/Accents)
         accent: '#806248',     // Medium Brown (Buttons/Highlights)
         dark: '#50311D',       // Deep Brown (Text/Strong Elements)

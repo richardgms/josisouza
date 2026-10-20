@@ -28,7 +28,7 @@ const Experience = () => {
                                 ais que um atendimento, um momento de pausa. Nosso espaço foi pensado para acolher, com aromas suaves, música ambiente e uma estética que acalma.
                             </p>
 
-                            <p className="italic text-primary/80 border-l-2 border-primary/20 pl-4 my-6">
+                            <p className="italic text-primary border-l-2 border-primary/20 pl-4 my-6">
                                 "Cada detalhe importa. Aqui, sua singularidade é nossa prioridade."
                             </p>
 
