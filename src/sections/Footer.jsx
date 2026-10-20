@@ -9,7 +9,7 @@ const Footer = () => {
 
                     {/* Brand */}
                     <div>
-                        <img src="/monogram.svg" alt="Josi Souza" className="h-12 md:h-16 w-auto mb-4 md:mb-6 mx-auto md:mx-0" />
+                        <img src="/monogram.svg" alt="Josi Souza" width="64" height="64" loading="lazy" className="h-12 md:h-16 w-auto mb-4 md:mb-6 mx-auto md:mx-0" />
                         <p className="text-text/60 text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
                             Beleza leve, real e com propósito. Um espaço pensado para o seu equilíbrio e bem-estar.
                         </p>
@@ -17,7 +17,7 @@ const Footer = () => {
 
                     {/* Contact */}
                     <div>
-                        <h4 className="text-sm font-bold uppercase tracking-widest text-text mb-6">Contato</h4>
+                        <h3 className="text-sm font-bold uppercase tracking-widest text-text mb-6">Contato</h3>
                         <ul className="space-y-4 text-text/70 text-sm">
                             <li className="flex items-center justify-center md:justify-start gap-3">
                                 <MessageCircle className="w-4 h-4 text-primary" />
@@ -36,7 +36,7 @@ const Footer = () => {
 
                     {/* Links */}
                     <div>
-                        <h4 className="text-sm font-bold uppercase tracking-widest text-text mb-6">Menu</h4>
+                        <h3 className="text-sm font-bold uppercase tracking-widest text-text mb-6">Menu</h3>
                         <ul className="space-y-3 text-text/70 text-sm">
                             <li><a href="#sobre" className="hover:text-primary transition-colors">Sobre</a></li>
                             <li><a href="#servicos" className="hover:text-primary transition-colors">Serviços</a></li>

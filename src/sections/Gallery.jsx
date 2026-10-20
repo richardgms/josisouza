@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 const images = [
     // Unhas Naturais
@@ -21,7 +21,7 @@ const Gallery = () => {
     const ImageGrid = ({ items }) => (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {items.map((img, index) => (
-                <motion.div
+                <m.div
                     key={img.src}
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
@@ -40,7 +40,7 @@ const Gallery = () => {
                     <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <span className="text-white font-serif tracking-widest text-sm uppercase">Ver mais</span>
                     </div>
-                </motion.div>
+                </m.div>
             ))}
         </div>
     );

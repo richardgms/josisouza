@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 const Experience = () => {
     return (
@@ -8,7 +8,7 @@ const Experience = () => {
                 <div className="flex flex-col lg:flex-row items-center gap-16">
 
                     {/* Text Content */}
-                    <motion.div
+                    <m.div
                         className="w-full lg:w-1/3"
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -36,11 +36,11 @@ const Experience = () => {
                                 Um espaço acolhedor e elegante, que se dedica em realçar a beleza natural através de técnicas personalizadas e produtos de alta qualidade.
                             </p>
                         </div>
-                    </motion.div>
+                    </m.div>
 
                     {/* Image Grid */}
                     <div className="w-full lg:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-4">
-                        <motion.div
+                        <m.div
                             className="space-y-4"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -53,9 +53,9 @@ const Experience = () => {
                             <div className="aspect-square overflow-hidden rounded-sm">
                                 <img src="/experience-space-detail.webp" alt="Detalhes do Espaço" loading="lazy" width="800" height="800" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                             </div>
-                        </motion.div>
+                        </m.div>
 
-                        <motion.div
+                        <m.div
                             className="space-y-4 pt-8"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -68,9 +68,9 @@ const Experience = () => {
                             <div className="aspect-[3/4] overflow-hidden rounded-sm">
                                 <img src="/experience-products.webp" alt="Produtos de Qualidade" loading="lazy" width="800" height="1067" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                             </div>
-                        </motion.div>
+                        </m.div>
 
-                        <motion.div
+                        <m.div
                             className="space-y-4 hidden md:block"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -83,7 +83,7 @@ const Experience = () => {
                             <div className="aspect-square overflow-hidden rounded-sm">
                                 <img src="/experience-special-care.webp" alt="Cuidados Especiais" loading="lazy" width="800" height="800" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                             </div>
-                        </motion.div>
+                        </m.div>
                     </div>
 
                 </div>

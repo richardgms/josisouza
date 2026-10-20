@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
@@ -10,14 +10,16 @@ const Hero = () => {
                 <img
                     src="/hero-bg-detail.webp"
                     alt="Josi Souza Beauty - Detalhes"
-                    fetchPriority="high"
+                    width="600"
+                    height="1067"
+                    decoding="async"
                     className="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-multiply"
                 />
-                <img src="/monogram.svg" alt="" className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[140%] md:w-[55%] opacity-[0.03] md:opacity-7 pointer-events-none z-40" />
+                <img src="/monogram.svg" alt="" width="1024" height="1024" fetchPriority="high" className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[140%] md:w-[55%] opacity-[0.03] md:opacity-7 pointer-events-none z-40" />
             </div>
 
             <div className="container mx-auto px-4 relative z-20 text-center flex flex-col items-center justify-center h-full">
-                <motion.div
+                <m.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
@@ -39,18 +41,18 @@ const Hero = () => {
                     >
                         Viver a Experiência
                     </a>
-                </motion.div>
+                </m.div>
             </div>
 
             {/* Scroll Indicator */}
-            <motion.div
+            <m.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.5, delay: 1, repeat: Infinity, repeatType: "reverse" }}
                 className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-primary/40"
             >
                 <ChevronDown className="w-8 h-8" />
-            </motion.div>
+            </m.div>
         </section>
     );
 };

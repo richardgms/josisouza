@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { ScanFace, ShieldCheck } from 'lucide-react';
 
 const About = () => {
@@ -9,7 +9,7 @@ const About = () => {
                 <div className="flex flex-col md:flex-row items-start gap-12 md:gap-16">
 
                     {/* Image Side */}
-                    <motion.div
+                    <m.div
                         className="w-full md:w-5/12"
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -21,15 +21,15 @@ const About = () => {
                                 src="/josi-souza-about.webp"
                                 alt="Josi Souza"
                                 loading="lazy"
-                                width="1024"
-                                height="1280"
+                                width="800"
+                                height="1000"
                                 className="w-full h-full object-cover object-[50%_62%] hover:scale-105 transition-transform duration-700"
                             />
                         </div>
-                    </motion.div>
+                    </m.div>
 
                     {/* Content Side */}
-                    <motion.div
+                    <m.div
                         className="w-full md:w-7/12"
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -88,7 +88,7 @@ const About = () => {
                             </div>
                         </div>
 
-                    </motion.div>
+                    </m.div>
 
                 </div>
             </div>

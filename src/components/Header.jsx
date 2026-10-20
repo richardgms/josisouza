@@ -26,7 +26,7 @@ const Header = () => {
         <>
             <header
                 className={`fixed w-full top-0 z-50 transition-all duration-300 border-b border-secondary/10 ${isScrolled
-                    ? 'bg-background/95 backdrop-blur-sm py-3 shadow-sm'
+                    ? 'bg-background/95 py-3 shadow-sm'
                     : 'bg-background py-5'
                     }`}
             >
@@ -114,6 +114,7 @@ const Header = () => {
                         <span className="font-serif text-2xl text-primary font-bold tracking-tighter">JS</span>
                         <button
                             onClick={() => setIsMobileMenuOpen(false)}
+                            aria-label="Fechar menu"
                             className="text-dark/40 hover:text-primary transition-colors p-2 -mr-2"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

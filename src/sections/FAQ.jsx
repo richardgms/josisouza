@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
 const faqs = [
@@ -45,7 +45,7 @@ const FAQ = () => {
                             </button>
                             <AnimatePresence>
                                 {activeIndex === index && (
-                                    <motion.div
+                                    <m.div
                                         initial={{ height: 0, opacity: 0 }}
                                         animate={{ height: "auto", opacity: 1 }}
                                         exit={{ height: 0, opacity: 0 }}
@@ -55,7 +55,7 @@ const FAQ = () => {
                                         <p className="pb-6 text-text/70 leading-relaxed">
                                             {faq.answer}
                                         </p>
-                                    </motion.div>
+                                    </m.div>
                                 )}
                             </AnimatePresence>
                         </div>
