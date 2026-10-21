@@ -4,7 +4,7 @@ import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
     return (
-        <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden bg-background">
+        <section className="relative flex-1 flex flex-col items-center pt-[4.5rem] md:pt-[5.5rem] overflow-hidden bg-background">
             {/* Background Image & Overlay */}
             <div className="absolute inset-0 z-0 bg-[#F5F2ED]">
                 <img
@@ -18,7 +18,9 @@ const Hero = () => {
                 <img src="/monogram.svg" alt="" width="1024" height="1024" fetchPriority="high" className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[140%] md:w-[55%] opacity-[0.03] md:opacity-7 pointer-events-none z-40" />
             </div>
 
-            <div className="container mx-auto px-4 relative z-20 text-center flex flex-col items-center justify-center h-full">
+            <div className="flex-1 w-full" />
+
+            <div className="container mx-auto px-4 relative z-20 text-center flex flex-col items-center justify-center">
                 <m.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -44,15 +46,19 @@ const Hero = () => {
                 </m.div>
             </div>
 
-            {/* Scroll Indicator */}
+            <div className="flex-1 w-full" />
+
+            {/* Scroll Indicator: espaço igual acima (botão) e abaixo (fim da seção) */}
             <m.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.5, delay: 1, repeat: Infinity, repeatType: "reverse" }}
-                className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-primary/40"
+                className="text-primary/40 z-20"
             >
                 <ChevronDown className="w-8 h-8" />
             </m.div>
+
+            <div className="flex-1 w-full" />
         </section>
     );
 };

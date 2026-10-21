@@ -18,8 +18,10 @@ function App() {
       <Header />
 
       <main>
-        <Hero />
-        <HeroSplit />
+        <div className="flex flex-col min-h-[max(100dvh,700px)] md:min-h-[max(100dvh,820px)]">
+          <Hero />
+          <HeroSplit />
+        </div>
         <About />
         <Services />
         <Experience />
