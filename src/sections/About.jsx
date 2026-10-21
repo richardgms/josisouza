@@ -4,7 +4,7 @@ import { ScanFace, ShieldCheck } from 'lucide-react';
 
 const About = () => {
     return (
-        <section id="sobre" className="py-16 md:py-32 bg-background">
+        <section id="sobre" className="py-12 md:py-32 bg-background scroll-mt-16">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row items-start gap-12 md:gap-16">
 
@@ -41,36 +41,36 @@ const About = () => {
                             <span className="text-text">um encontro com sua autoestima.</span>
                         </h2>
 
-                        <div className="text-text/80 leading-relaxed font-light text-lg mb-10 md:mb-12 text-center md:text-left">
+                        <div className="text-text/80 leading-relaxed font-light text-lg mb-8 md:mb-12 text-left">
                             <p className="mb-6">
-                                Minha trajetória é marcada pela busca incessante pela excelência. Acredito que a beleza deve ser leve, real e, acima de tudo, intencional. Não se trata apenas de um procedimento, mas de um método pensado para você.
+                                Minha trajetória é marcada pela <strong className="font-normal text-dark">busca incessante pela excelência</strong>. Acredito que a beleza deve ser <strong className="font-normal text-dark">leve, real e, acima de tudo, intencional</strong>. Não se trata apenas de um procedimento, mas de <strong className="font-normal text-dark">um método pensado para você</strong>.
                             </p>
                         </div>
 
                         {/* The Method Grid */}
-                        <div className="grid grid-cols-1 gap-8 mb-12">
+                        <div className="grid grid-cols-1 gap-6 md:gap-8 mb-8 md:mb-12">
                             {/* Step 1 */}
-                            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 group items-center sm:items-start text-center sm:text-left">
+                            <div className="flex flex-row gap-4 sm:gap-6 group items-start text-left">
                                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                                     <ScanFace className="w-6 h-6" />
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-serif text-primary mb-2">Análise Personalizada</h3>
                                     <p className="text-text/70 text-sm leading-relaxed">
-                                        Escuta ativa e entendimento profundo do seu estilo, rotina e desejos. Nada é padrão, tudo é sobre você.
+                                        <strong className="font-normal text-dark">Escuta ativa</strong> e entendimento profundo do seu estilo, rotina e desejos. <strong className="font-normal text-dark">Nada é padrão</strong>, tudo é sobre você.
                                     </p>
                                 </div>
                             </div>
 
                             {/* Step 3 */}
-                            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 group items-center sm:items-start text-center sm:text-left">
+                            <div className="flex flex-row gap-4 sm:gap-6 group items-start text-left">
                                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-serif text-primary mb-2">Conforto & Qualidade</h3>
                                     <p className="text-text/70 text-sm leading-relaxed">
-                                        Um ambiente acolhedor e elegante, com produtos de alta performance para garantir uma experiência única e memorável.
+                                        Um <strong className="font-normal text-dark">ambiente acolhedor e elegante</strong>, com produtos de <strong className="font-normal text-dark">alta performance</strong> para garantir uma experiência única e memorável.
                                     </p>
                                 </div>
                             </div>
@@ -83,7 +83,7 @@ const About = () => {
                             >
                                 Conheça meu Propósito
                             </a>
-                            <div className="font-serif text-2xl tracking-[0.1em] text-primary/60 uppercase">
+                            <div className="hidden sm:block font-serif text-2xl tracking-[0.1em] text-primary/60 uppercase">
                                 Josi Souza
                             </div>
                         </div>
