@@ -91,3 +91,21 @@
     @apply px-6 py-3 border border-primary text-primary rounded-full transition-all duration-300 hover:bg-primary hover:text-white uppercase tracking-wider text-sm font-medium;
   }
 }
+
+/* Empurrãozinho lateral da dica das abas de serviços */
+@keyframes nudge-right {
+  0%, 60%, 100% { transform: translateX(0); }
+  30% { transform: translateX(5px); }
+}
+
+@keyframes nudge-left {
+  0%, 60%, 100% { transform: translateX(0); }
+  30% { transform: translateX(-5px); }
+}
+
+.nudge-right { animation: nudge-right 1.6s ease-in-out infinite; }
+.nudge-left { animation: nudge-left 1.6s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .nudge-right, .nudge-left { animation: none; }
+}
