@@ -78,6 +78,16 @@ const Header = () => {
                         ))}
                     </nav>
 
+                    {/* Desktop CTA (Right) */}
+                    <a
+                        href="https://wa.me/5583986209170"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hidden lg:inline-block absolute right-4 btn-primary !py-2 !px-5 !text-xs"
+                    >
+                        Agendar
+                    </a>
+
                     {/* Mobile CTA (Right) */}
                     <a
                         href="https://wa.me/5583986209170"
