@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
 import { m, AnimatePresence } from 'framer-motion';
+import Rich from '../components/Rich';
 import { ChevronDown } from 'lucide-react';
 
 const faqs = [
     {
         question: "Como funciona o agendamento?",
-        answer: "Para garantir um atendimento exclusivo e personalizado, nossos agendamentos são realizados unicamente via WhatsApp. Assim, conseguimos entender suas necessidades e encontrar o melhor horário para você."
+        answer: "Para garantir um atendimento exclusivo e personalizado, nossos agendamentos são realizados **unicamente via WhatsApp**. Assim, conseguimos entender suas necessidades e encontrar o melhor horário para você."
     },
     {
         question: "Quais formas de pagamento aceitas?",
-        answer: "Trabalhamos com Pix e cartões de crédito/débito. Para nossos cursos e mentorias, oferecemos condições especiais de parcelamento."
+        answer: "Trabalhamos com **Pix** e **cartões de crédito/débito**. Para nossos cursos e mentorias, oferecemos condições especiais de parcelamento."
     },
     {
         question: "Onde fica localizado o espaço?",
-        answer: "Atendemos nas regiões de João Pessoa e Santa Rita. O endereço exato ou local de atendimento é enviado após a confirmação do seu agendamento."
+        answer: "Atendemos nas regiões de **João Pessoa e Santa Rita**. O endereço exato ou local de atendimento é enviado após a confirmação do seu agendamento."
     },
     {
         question: "Qual a durabilidade do alongamento em gel?",
-        answer: "A durabilidade está diretamente ligada ao cuidado e à manutenção, recomendada a cada 20-25 dias. Seguindo o protocolo, suas unhas permanecem impecáveis e saudáveis continuamente."
+        answer: "A durabilidade está diretamente ligada ao cuidado e à manutenção, recomendada **a cada 20-25 dias**. Seguindo o protocolo, suas unhas permanecem impecáveis e saudáveis continuamente."
     }
 ];
 
@@ -25,9 +26,9 @@ const FAQ = () => {
     const [activeIndex, setActiveIndex] = useState(null);
 
     return (
-        <section className="py-20 bg-background">
-            <div className="container mx-auto px-4 max-w-3xl">
-                <div className="text-center mb-12">
+        <section className="py-12 md:py-20 bg-background">
+            <div className="container mx-auto px-4 max-w-4xl">
+                <div className="text-center mb-8 md:mb-12">
                     <h2 className="text-3xl md:text-4xl font-serif text-primary mb-4">Dúvidas Frequentes</h2>
                 </div>
 
@@ -53,7 +54,7 @@ const FAQ = () => {
                                         className="overflow-hidden"
                                     >
                                         <p className="pb-6 text-text/70 leading-relaxed">
-                                            {faq.answer}
+                                            <Rich text={faq.answer} />
                                         </p>
                                     </m.div>
                                 )}
