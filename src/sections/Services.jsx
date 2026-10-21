@@ -94,7 +94,7 @@ const Services = () => {
                             role="tab"
                             aria-selected={active === i}
                             onClick={() => setActive(i)}
-                            className={`relative z-10 flex-1 py-2.5 rounded-full text-sm font-medium transition-colors duration-300 ${active === i ? 'text-white' : 'text-primary'}`}
+                            className={`relative z-10 flex-1 py-2.5 rounded-full text-sm font-medium transition-colors duration-300 ${active === i ? 'text-white' : 'text-dark'}`}
                         >
                             {cat.category} ({cat.items.length})
                         </button>
