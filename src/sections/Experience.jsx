@@ -48,7 +48,7 @@ const Experience = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
                             <div className="aspect-[3/4] overflow-hidden rounded-sm">
-                                <img src="/experience-treatment.webp" alt="Atendimento Josi Souza" loading="lazy" width="800" height="1067" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                                <img src="/experience-josi-trabalhando.webp" alt="Josi Souza esmaltando as unhas de uma cliente" loading="lazy" width="800" height="1067" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                             </div>
                             <div className="aspect-square overflow-hidden rounded-sm">
                                 <img src="/experience-space-detail.webp" alt="Detalhes do Espaço" loading="lazy" width="800" height="800" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
@@ -63,10 +63,23 @@ const Experience = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                         >
                             <div className="aspect-square overflow-hidden rounded-sm">
-                                <img src="/experience-tools.webp" alt="Ferramentas Organizadas" loading="lazy" width="800" height="800" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                                <img src="/experience-tools.webp" alt="Josi Souza com esmaltes" loading="lazy" width="800" height="800" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                             </div>
                             <div className="aspect-[3/4] overflow-hidden rounded-sm">
-                                <img src="/experience-products.webp" alt="Produtos de Qualidade" loading="lazy" width="800" height="1067" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                                <video
+                                    src="/experience-josi-marrom.mp4"
+                                    poster="/experience-josi-marrom-poster.webp"
+                                    aria-label="Josi Souza aplicando esmalte marrom na unha de uma cliente"
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                    preload="metadata"
+                                    width="464"
+                                    height="618"
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 motion-reduce:hidden"
+                                />
+                                <img src="/experience-josi-marrom.webp" alt="Josi Souza aplicando esmalte marrom na unha de uma cliente" loading="lazy" width="800" height="1067" className="hidden motion-reduce:block w-full h-full object-cover" />
                             </div>
                         </m.div>
 
@@ -78,7 +91,7 @@ const Experience = () => {
                             transition={{ duration: 0.8, delay: 0.6 }}
                         >
                             <div className="aspect-[3/4] overflow-hidden rounded-sm">
-                                <img src="/experience-clean-environment.webp" alt="Ambiente Clean" loading="lazy" width="800" height="1067" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                                <img src="/experience-josi-leque.webp" alt="Josi Souza com cartela de cores de esmalte" loading="lazy" width="800" height="1067" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                             </div>
                             <div className="aspect-square overflow-hidden rounded-sm">
                                 <img src="/experience-special-care.webp" alt="Cuidados Especiais" loading="lazy" width="800" height="800" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />

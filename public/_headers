@@ -9,3 +9,6 @@
 
 /*.svg
   Cache-Control: public, max-age=2592000
+
+/*.mp4
+  Cache-Control: public, max-age=2592000
