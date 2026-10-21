@@ -23,7 +23,7 @@ const About = () => {
                                 loading="lazy"
                                 width="800"
                                 height="1000"
-                                className="w-full h-full object-cover object-[50%_62%] hover:scale-105 transition-transform duration-700"
+                                className="w-full h-full object-cover object-[50%_62%] md:object-[50%_0%] hover:scale-105 transition-transform duration-700"
                             />
                         </div>
                     </m.div>
