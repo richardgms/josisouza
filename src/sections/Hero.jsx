@@ -13,9 +13,10 @@ const Hero = () => {
                     width="600"
                     height="1067"
                     decoding="async"
+                    fetchPriority="high"
                     className="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-multiply"
                 />
-                <img src="/monogram.svg" alt="" width="1024" height="1024" fetchPriority="high" className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[140%] md:w-[55%] opacity-[0.03] md:opacity-7 pointer-events-none z-40" />
+                <img src="/monogram.svg" alt="" width="1024" height="1024" className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[140%] md:w-[55%] opacity-[0.03] md:opacity-7 pointer-events-none z-40" />
             </div>
 
             <div className="flex-1 w-full" />
