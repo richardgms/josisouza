@@ -3,7 +3,7 @@ import { m } from 'framer-motion';
 
 const Experience = () => {
     return (
-        <section className="py-20 bg-background overflow-hidden">
+        <section className="py-12 md:py-20 bg-background overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
 
@@ -25,7 +25,7 @@ const Experience = () => {
                         <div className="text-text/80 leading-relaxed space-y-6 text-lg font-light">
                             <p>
                                 <span className="float-left text-5xl font-serif text-primary mr-3 mt-[-6px] leading-none">M</span>
-                                ais que um atendimento, um momento de pausa. Nosso espaço foi pensado para acolher, com aromas suaves, música ambiente e uma estética que acalma.
+                                ais que um atendimento, um momento de pausa. Nosso espaço foi pensado para acolher, com <strong className="font-normal text-dark">aromas suaves</strong>, <strong className="font-normal text-dark">música ambiente</strong> e uma <strong className="font-normal text-dark">estética que acalma</strong>.
                             </p>
 
                             <p className="italic text-primary border-l-2 border-primary/20 pl-4 my-6">
@@ -33,7 +33,7 @@ const Experience = () => {
                             </p>
 
                             <p>
-                                Um espaço acolhedor e elegante, que se dedica em realçar a beleza natural através de técnicas personalizadas e produtos de alta qualidade.
+                                Um espaço acolhedor e elegante, que se dedica em realçar a beleza natural através de <strong className="font-normal text-dark">técnicas personalizadas</strong> e <strong className="font-normal text-dark">produtos de alta qualidade</strong>.
                             </p>
                         </div>
                     </m.div>
