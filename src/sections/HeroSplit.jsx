@@ -13,7 +13,7 @@ const HeroSplit = () => {
                             initial={{ x: -50, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.8 }}
-                            className="text-[8rem] md:text-[12rem] font-serif text-primary leading-none"
+                            className="text-[6.5rem] md:text-[12rem] font-serif text-primary leading-none"
                         >
                             JO
                         </m.h2>
@@ -25,7 +25,7 @@ const HeroSplit = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="relative z-20 -mx-4 md:-mx-8 mt-4"
                         >
-                            <div className="w-32 h-40 md:w-48 md:h-64 rounded-full overflow-hidden border-4 border-background shadow-xl">
+                            <div className="w-28 h-36 md:w-48 md:h-64 rounded-full overflow-hidden border-4 border-background shadow-xl">
                                 <img
                                     src="/josi-souza-profile.webp"
                                     alt="Josi Souza"
@@ -42,7 +42,7 @@ const HeroSplit = () => {
                             initial={{ x: 50, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.8 }}
-                            className="text-[8rem] md:text-[12rem] font-serif text-primary leading-none"
+                            className="text-[6.5rem] md:text-[12rem] font-serif text-primary leading-none"
                         >
                             SI
                         </m.h2>

@@ -4,7 +4,7 @@ import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
     return (
-        <section className="relative flex-1 flex flex-col items-center pt-[4.5rem] md:pt-[5.5rem] overflow-hidden bg-background">
+        <section className="relative flex-1 flex flex-col items-center pt-[5.5rem] overflow-hidden bg-background">
             {/* Background Image & Overlay */}
             <div className="absolute inset-0 z-0 bg-[#F5F2ED]">
                 <img
@@ -30,7 +30,7 @@ const Hero = () => {
                     <h2 className="text-xs md:text-base uppercase tracking-[0.3em] text-text/60 mb-6 md:mb-6">
                         Estética & Bem-estar
                     </h2>
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-primary mb-10 md:mb-10 leading-[1.1]">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-primary mb-8 md:mb-10 leading-[1.1]">
                         Sua beleza natural,<br />
                         elevada à sua <span className="italic text-text">melhor versão</span>.
                     </h1>

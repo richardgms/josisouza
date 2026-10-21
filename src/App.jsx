@@ -18,7 +18,7 @@ function App() {
       <Header />
 
       <main>
-        <div className="flex flex-col min-h-[max(100dvh,700px)] md:min-h-[max(100dvh,820px)]">
+        <div className="flex flex-col min-h-[max(100dvh,640px)] max-[340px]:min-h-[max(100dvh,720px)] md:min-h-[max(100dvh,820px)]">
           <Hero />
           <HeroSplit />
         </div>
