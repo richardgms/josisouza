@@ -48,7 +48,9 @@ const Experience = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
                             <div className="aspect-[3/4] overflow-hidden rounded-sm">
-                                <img src="/experience-josi-trabalhando.webp" alt="Josi Souza esmaltando as unhas de uma cliente" loading="lazy" width="800" height="1067" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                                {/* Mobile mostra só 4 fotos: aqui entra o leque; no desktop o leque fica na 3ª coluna */}
+                                <img src="/experience-josi-leque.webp" alt="Josi Souza com cartela de cores de esmalte" loading="lazy" width="800" height="1067" className="md:hidden w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                                <img src="/experience-josi-trabalhando.webp" alt="Josi Souza esmaltando as unhas de uma cliente" loading="lazy" width="800" height="1067" className="hidden md:block w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                             </div>
                             <div className="aspect-square overflow-hidden rounded-sm">
                                 <img src="/experience-space-detail.webp" alt="Detalhes do Espaço" loading="lazy" width="800" height="800" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
