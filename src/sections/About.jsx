@@ -19,11 +19,11 @@ const About = () => {
                         <div className="relative aspect-[4/5] md:aspect-square bg-secondary/30 rounded-sm overflow-hidden max-w-md mx-auto md:max-w-none">
                             <img
                                 src="/josi-souza-sobre.webp"
-                                alt="Josi Souza"
+                                alt="Josi Souza sorrindo, de blazer preto e calça jeans, apoiada em uma cadeira de palhinha"
                                 loading="lazy"
                                 width="928"
-                                height="1152"
-                                className="w-full h-full object-cover object-[50%_62%] md:object-[50%_0%] hover:scale-105 transition-transform duration-700"
+                                height="1159"
+                                className="w-full h-full object-cover object-center md:object-[50%_10%] hover:scale-105 transition-transform duration-700"
                             />
                         </div>
                     </m.div>
