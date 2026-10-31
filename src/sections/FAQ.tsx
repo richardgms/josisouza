@@ -1,0 +1,85 @@
+'use client';
+
+import React, { useState } from 'react';
+import { m, AnimatePresence } from 'framer-motion';
+import Rich from '../components/Rich';
+import { ChevronDown } from 'lucide-react';
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export const faqsData: FAQItem[] = [
+  {
+    question: 'Como funciona o agendamento?',
+    answer:
+      'Para garantir um atendimento exclusivo e personalizado, nossos agendamentos são realizados **unicamente via WhatsApp**. Assim, conseguimos entender suas necessidades e encontrar o melhor horário para você.',
+  },
+  {
+    question: 'Quais formas de pagamento aceitas?',
+    answer:
+      'Trabalhamos com **Pix** e **cartões de crédito/débito**. Para nossos cursos e mentorias, oferecemos condições especiais de parcelamento.',
+  },
+  {
+    question: 'Onde fica localizado o espaço?',
+    answer:
+      'Atendemos nas regiões de **João Pessoa e Santa Rita**. O endereço exato ou local de atendimento é enviado após a confirmação do seu agendamento.',
+  },
+  {
+    question: 'Qual a durabilidade do alongamento em gel?',
+    answer:
+      'A durabilidade está diretamente ligada ao cuidado e à manutenção, recomendada **a cada 20-25 dias**. Seguindo o protocolo, suas unhas permanecem impecáveis e saudáveis continuamente.',
+  },
+];
+
+export default function FAQ() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  return (
+    <section className="py-12 md:py-20 bg-background">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl md:text-4xl font-serif text-primary mb-4">
+            Dúvidas Frequentes
+          </h2>
+        </div>
+
+        <div className="space-y-4">
+          {faqsData.map((faq, index) => (
+            <div key={index} className="border-b border-secondary/30">
+              <button
+                className="w-full py-6 flex justify-between items-center text-left focus:outline-none group"
+                onClick={() => setActiveIndex(activeIndex === index ? null : index)}
+              >
+                <span className="text-lg text-text font-medium group-hover:text-primary transition-colors">
+                  {faq.question}
+                </span>
+                <ChevronDown
+                  className={`w-5 h-5 text-primary transition-transform duration-300 ${
+                    activeIndex === index ? 'rotate-180' : ''
+                  }`}
+                />
+              </button>
+              <AnimatePresence>
+                {activeIndex === index && (
+                  <m.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="overflow-hidden"
+                  >
+                    <p className="pb-6 text-text/70 leading-relaxed">
+                      <Rich text={faq.answer} />
+                    </p>
+                  </m.div>
+                )}
+              </AnimatePresence>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

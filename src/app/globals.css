@@ -1,49 +1,5 @@
 @import "tailwindcss";
 
-/* Fontes self-hosted (subset latino, woff2). Lato e Playfair 400 têm preload no index.html */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url('/fonts/lato-latin-300-normal.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/lato-latin-400-normal.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/fonts/lato-latin-700-normal.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/playfair-display-latin-400-normal.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/playfair-display-latin-400-italic.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/fonts/playfair-display-latin-700-normal.woff2') format('woff2');
-}
-
 @theme {
   --color-primary: #7F6B57;
   --color-secondary: #D4CABE;
@@ -54,8 +10,8 @@
   --color-surface: #E4DFD7;
   --color-text: #181716;
 
-  --font-sans: 'Lato', sans-serif;
-  --font-serif: 'Playfair Display', serif;
+  --font-sans: var(--font-sans), 'Lato', sans-serif;
+  --font-serif: var(--font-serif), 'Playfair Display', serif;
 }
 
 @utility container {
@@ -66,7 +22,6 @@
 }
 
 @layer base {
-
   html,
   body {
     @apply bg-background text-text font-sans antialiased overflow-x-hidden;
@@ -92,7 +47,7 @@
   }
 }
 
-/* Empurrãozinho lateral da dica das abas de serviços */
+/* Animações sutis das abas */
 @keyframes nudge-right {
   0%, 60%, 100% { transform: translateX(0); }
   30% { transform: translateX(5px); }

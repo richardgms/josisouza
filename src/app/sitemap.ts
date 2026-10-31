@@ -1,0 +1,19 @@
+import type { MetadataRoute } from 'next';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const siteUrl = 'https://josisouzabeauty.com.br';
+
+  return [
+    {
+      url: siteUrl,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1.0,
+      images: [
+        `${siteUrl}/og-image-v2.jpg`,
+        `${siteUrl}/josi-souza-sobre.webp`,
+        `${siteUrl}/josi-souza-profile.webp`,
+      ],
+    },
+  ];
+}
