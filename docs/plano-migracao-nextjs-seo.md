@@ -56,6 +56,7 @@ Migrar o projeto de **Vite + React (SPA/JavaScript)** para **Next.js 16 (App Rou
 - [x] Build estático de produção (`npm run build`) concluído com sucesso via Turbopack (rotas `/`, `/sitemap.xml`, `/robots.txt` pré-renderizadas estaticamente).
 - [x] Merge na branch `main` e deploy em produção verificado no Netlify (`https://josisouzabeauty.com.br/`).
 - [x] Validação em produção das rotas `/sitemap.xml` (com tags de imagem dinâmicas) e `/robots.txt`.
+- [x] Restauração e validação visual de fidelidade 1:1: monograma circular "JS" no Header, ícone oficial do WhatsApp no mobile e seta pulsante (`ChevronDown`) do Hero.
 
 ---
 
