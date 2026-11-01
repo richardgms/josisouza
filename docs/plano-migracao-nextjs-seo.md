@@ -66,3 +66,4 @@ Migrar o projeto de **Vite + React (SPA/JavaScript)** para **Next.js 16 (App Rou
 - **Fontes self-hosted**: `next/font/local` elimina downloads externos em tempo de compilação e previne Layout Shift (CLS = 0).
 - **Deploy Next.js no Netlify**: a configuração do plugin `@netlify/plugin-nextjs` com `publish = ".next"` no `netlify.toml` assegura a execução automática do runtime sem conflitar com configurações legadas de pasta `dist`.
 - **Sitemap Dinâmico**: remover arquivos estáticos legados `sitemap.xml` da pasta `/public` é indispensável para que o Next.js sirva a rota gerada pelo `sitemap.ts`.
+- **Favicon no Google Search (SERP)**: O Googlebot-Favicons não indexa WebP nem SVG direto para a SERP; exige formato ICO/PNG em dimensões múltiplas de 48px (ex: 48x48, 96x96) e consulta `/favicon.ico` na raiz. A reindexação do ícone no Google segue um ciclo próprio e mais lento que o do conteúdo textual.
