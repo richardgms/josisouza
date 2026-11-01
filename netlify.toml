@@ -1,0 +1,13 @@
+# Configuração de deploy — Next.js na Netlify
+# O repositório migrado de Vite para Next.js 16 (App Router)
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# Runtime oficial da Netlify para Next.js (SSR, rotas, headers, imagens)
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NODE_VERSION = "20"
