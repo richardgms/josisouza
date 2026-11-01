@@ -54,6 +54,8 @@ Migrar o projeto de **Vite + React (SPA/JavaScript)** para **Next.js 16 (App Rou
 - [x] Checagem estática de tipos (`tsc --noEmit`) aprovada com 0 erros.
 - [x] ESLint (`npm run lint`) com regras Next Vitals e TypeScript aprovado com 0 erros.
 - [x] Build estático de produção (`npm run build`) concluído com sucesso via Turbopack (rotas `/`, `/sitemap.xml`, `/robots.txt` pré-renderizadas estaticamente).
+- [x] Merge na branch `main` e deploy em produção verificado no Netlify (`https://josisouzabeauty.com.br/`).
+- [x] Validação em produção das rotas `/sitemap.xml` (com tags de imagem dinâmicas) e `/robots.txt`.
 
 ---
 
@@ -61,3 +63,5 @@ Migrar o projeto de **Vite + React (SPA/JavaScript)** para **Next.js 16 (App Rou
 - **Tailwind CSS v4 + Next.js 16**: dispensa `tailwind.config.js` e centraliza paleta, container e fontes no `@theme` dentro de `globals.css`.
 - **Framer Motion no App Router**: isolar o provedor de animações (`LazyMotion`, `MotionConfig`) em um componente cliente dedicado (`MotionProvider.tsx`) viabiliza a execução híbrida SSR sem conflitos de hidratação.
 - **Fontes self-hosted**: `next/font/local` elimina downloads externos em tempo de compilação e previne Layout Shift (CLS = 0).
+- **Deploy Next.js no Netlify**: a configuração do plugin `@netlify/plugin-nextjs` com `publish = ".next"` no `netlify.toml` assegura a execução automática do runtime sem conflitar com configurações legadas de pasta `dist`.
+- **Sitemap Dinâmico**: remover arquivos estáticos legados `sitemap.xml` da pasta `/public` é indispensável para que o Next.js sirva a rota gerada pelo `sitemap.ts`.
