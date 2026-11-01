@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { m } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -57,21 +58,17 @@ export default function Hero() {
 
       <div className="flex-1 w-full" />
 
-      {/* Floating Indicators / Details */}
-      <div className="w-full relative z-20 pb-4 md:pb-6">
-        <div className="container mx-auto px-4 flex justify-between items-end text-xs tracking-widest text-text/40 uppercase">
-          <div className="hidden md:block">
-            <span>João Pessoa & Santa Rita</span>
-          </div>
-          <div className="w-full md:w-auto text-center flex flex-col items-center gap-2">
-            <span className="text-[10px] tracking-[0.2em]">Conheça os Detalhes</span>
-            <div className="w-[1px] h-6 bg-primary/20 animate-bounce" />
-          </div>
-          <div className="hidden md:block text-right">
-            <span>Atendimento Exclusivo</span>
-          </div>
-        </div>
-      </div>
+      {/* Scroll Indicator: espaço igual acima (botão) e abaixo (fim da seção) */}
+      <m.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, delay: 1, repeat: Infinity, repeatType: 'reverse' }}
+        className="text-primary/40 z-20"
+      >
+        <ChevronDown className="w-8 h-8" />
+      </m.div>
+
+      <div className="flex-1 w-full" />
     </section>
   );
 }

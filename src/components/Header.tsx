@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { WhatsAppIcon } from './CustomIcons';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,22 +61,23 @@ export default function Header() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-text/80 hover:text-primary transition-colors text-xs uppercase tracking-[0.2em] font-medium"
+                className="text-sm uppercase tracking-widest font-medium text-dark/70 hover:text-primary transition-colors"
               >
                 {link.name}
               </a>
             ))}
           </nav>
 
-          {/* Centered Brand / Monogram */}
-          <a href="#" className="flex flex-col items-center group relative z-10">
-            <span className="font-serif text-2xl md:text-3xl text-primary font-normal tracking-wide group-hover:opacity-90 transition-opacity">
-              Josi Souza
-            </span>
-            <span className="text-[9px] uppercase tracking-[0.3em] text-text/60 mt-0.5">
-              Nail Design
-            </span>
-          </a>
+          {/* Logo (Center) - Monogram Circular JS */}
+          <div className="flex-shrink-0 text-center z-10">
+            <a href="#" className="block group" aria-label="Josi Souza - Início">
+              <div className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center bg-surface group-hover:border-primary transition-all duration-500">
+                <span className="font-serif text-xl text-primary font-bold tracking-tighter group-hover:scale-110 transition-transform duration-500">
+                  JS
+                </span>
+              </div>
+            </a>
+          </div>
 
           {/* Desktop Nav Right */}
           <nav className="hidden md:flex items-center space-x-12 flex-1 justify-start pl-12">
@@ -83,56 +85,62 @@ export default function Header() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-text/80 hover:text-primary transition-colors text-xs uppercase tracking-[0.2em] font-medium"
+                className="text-sm uppercase tracking-widest font-medium text-dark/70 hover:text-primary transition-colors"
               >
                 {link.name}
               </a>
             ))}
           </nav>
 
-          {/* WhatsApp CTA (Right for desktop, icon for mobile) */}
-          <div className="flex items-center">
-            <a
-              href="https://wa.me/5583986209170"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden lg:inline-block px-5 py-2 text-xs uppercase tracking-wider border border-primary/30 text-primary rounded-full hover:bg-primary hover:text-white transition-all duration-300"
-            >
-              Agendar
-            </a>
-            <a
-              href="https://wa.me/5583986209170"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="lg:hidden text-primary p-2 -mr-2"
-              aria-label="Agendar via WhatsApp"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-5 h-5"
-              >
-                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-              </svg>
-            </a>
-          </div>
+          {/* Desktop CTA (Right) */}
+          <a
+            href="https://wa.me/5583986209170"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden lg:inline-block absolute right-4 btn-primary !py-2 !px-5 !text-xs"
+          >
+            Agendar
+          </a>
+
+          {/* Mobile CTA (Right - WhatsApp Oficial) */}
+          <a
+            href="https://wa.me/5583986209170"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="md:hidden text-primary p-2 -mr-2"
+            aria-label="Agendar no WhatsApp"
+          >
+            <WhatsAppIcon className="w-6 h-6" />
+          </a>
         </div>
       </header>
 
-      {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-md flex flex-col justify-between p-6 md:hidden animate-in fade-in duration-200">
-          <div className="flex justify-between items-center">
-            <span className="font-serif text-xl text-primary">Josi Souza</span>
+      {/* Mobile Menu Overlay Backdrop */}
+      <div
+        className={`fixed inset-0 z-[60] bg-black/20 backdrop-blur-sm transition-opacity duration-500 ${
+          isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={() => setIsMobileMenuOpen(false)}
+      />
+
+      {/* Mobile Menu Drawer Lateral */}
+      <div
+        className={`fixed top-0 left-0 bottom-0 w-[85%] max-w-xs bg-background z-[70] shadow-2xl transition-transform duration-500 cubic-bezier(0.4, 0, 0.2, 1) transform ${
+          isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        <div className="p-8 flex flex-col h-full relative overflow-hidden">
+          {/* Decorative Circle */}
+          <div className="absolute -top-20 -right-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+
+          <div className="flex justify-between items-center mb-16 relative z-10">
+            <span className="font-serif text-2xl text-primary font-bold tracking-tighter">
+              JS
+            </span>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-primary p-2"
               aria-label="Fechar menu"
+              className="text-dark/40 hover:text-primary transition-colors p-2 -mr-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -147,32 +155,32 @@ export default function Header() {
             </button>
           </div>
 
-          <nav className="flex flex-col items-center space-y-6 text-center">
+          <nav className="flex flex-col space-y-8 relative z-10">
             {[...navLinksLeft, ...navLinksRight].map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-text hover:text-primary transition-colors text-lg font-serif"
+                className="text-xl font-serif text-dark hover:text-primary transition-colors flex items-center gap-4 group"
               >
+                <span className="w-8 h-[1px] bg-primary/30 group-hover:w-12 group-hover:bg-primary transition-all duration-300" />
                 {link.name}
               </a>
             ))}
           </nav>
 
-          <div className="text-center">
+          <div className="mt-auto relative z-10">
             <a
               href="https://wa.me/5583986209170"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="btn-primary w-full inline-block"
+              className="block w-full text-center py-4 border border-primary text-primary hover:bg-primary hover:text-white rounded-none uppercase tracking-widest text-sm font-bold transition-all duration-300"
             >
-              Agendar no WhatsApp
+              Agendar Experiência
             </a>
           </div>
         </div>
-      )}
+      </div>
     </>
   );
 }
