@@ -34,6 +34,11 @@ Total registrado pelo Google: 12 fotos de galeria (+ logo). A categoria **PRODUC
 ## Reenvio (2026-11-10, mais tarde)
 O Richard não viu a logo nem as 2 de produto. A tabela Media listava as 12 fotos (as 2 de produto incluídas), mas **nenhuma linha de LOGO/PROFILE**. Reenviados: `logo.png` como **LOGO** (foi para `media/profile`) e as 2 de produto como ADDITIONAL (IDs novos `CIABIh...`). Se ainda não aparecerem, suspeita é moderação do Google (fotos de IA), não atraso.
 
+## Primeiro post (2026-11-10)
+Post de apresentação publicado e **LIVE**: texto em 1ª pessoa (a Josi falando, tom próximo), emojis variados (💅🛡️🎨🌿, nada de repetir o mesmo), sem telefone no texto, botão "Agendar" → site. Foto: `recebidas/IMG_4369.PNG` (camisa branca, caixinha de esmaltes). Hospedagem: commit avulso num ramo temporário `gbp-temp` do GitHub, apagado depois que o post ficou LIVE (o site não é tocado). Link: https://local.google.com/place?id=17159074315838849472&use=posts&lpsid=CAIQACoeChxtc3BfaDpKYWh5clZhNFFld1RraHhWdHZQdWxn
+
+Logo: o reenvio via API também não apareceu. O arquivo está OK (1280x1280, RGB, sem transparência). O Richard vai subir à mão: `gerados-ia/google-perfil-final/logo.png` (ou `logo.jpg`, cópia em qualidade máxima).
+
 ## Pendências
 1. **Voltar o conector do Windsor para a conta do Richard** (claude.ai → Configurações → Conectores → Windsor.ai). Enquanto estiver na da Josi, o Instagram e o Search Console dele não aparecem em nenhum projeto.
 2. Perguntei se envia o retrato com o leque (`experience-josi-leque`) como foto de Equipe. Aguardando ok. O recorte `perfil.jpg` (WA0012) **não foi enviado**.
