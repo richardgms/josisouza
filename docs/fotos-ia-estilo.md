@@ -20,6 +20,12 @@ Regras para recriar fotos de unhas e da Josi (Google Perfil da Empresa, site, re
 - Texto em livro/papel sai errado. Pedir página em branco/desfocada e, se quiser texto, sobrepor o texto da foto real (multiply, só sobre áreas de papel; cortar manchas de mão).
 - Conferir sempre polegar e anelar antes de aprovar.
 
+## Livro como acessório (preferência do Richard)
+- Livro de **capa mole/fina**, vibe moderna de reflexão (público 30–40 anos). Só a **capa**, sem página de texto nem página em branco.
+- Capa **fictícia** com título inventado que não exista (conferido por busca): "Devagar Eu Floresço". Não usar capa de livro real (direito autoral/marca).
+- Geometria: retângulo reto, largura constante, aparecendo por inteiro sob todos os dedos. Já saiu livro em "escada" e cortado no indicador; pedir "no steps, no cut-off, no tapering" e conferir.
+- Título curto em português; conferir a grafia na saída.
+
 ## Fluxo
 1. Gerar pela skill `gerar-imagem` (Codex, sem custo de API), 3–4 em paralelo (jobs do PowerShell).
 2. Salvar fora do repo em `Documentos\Josi Souza - Acervo de imagens\gerados-ia\<destino>\`.
