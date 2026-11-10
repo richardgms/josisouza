@@ -36,3 +36,12 @@ Regras para recriar fotos de unhas e da Josi (Google Perfil da Empresa, site, re
 
 ## Lote Google Perfil (nov/2026)
 Aprovados: unhas-francesinha, unhas-nude-curtas-v2, unhas-nude-glitter-v2, unhas-vermelhas-livro-v2 (e a versão `-texto` com sobreposição do livro) em `gerados-ia\google-perfil\`. Envio ao perfil pendente.
+
+## Envio ao Google Perfil da Empresa (feito em 2026-11-10)
+- Enviado via Windsor (`google_my_business`, ação `upload_media`) usando URLs públicas temporárias em `public/gbp/` do site, removidas depois do envio. As fotos finais ficam em `Documentos\Josi Souza - Acervo de imagens\gerados-ia\google-perfil-final\`.
+- **Logo e foto de perfil ocupam o mesmo espaço** (`media/profile`): o último envio vence. Ficou a logo (monograma).
+- A categoria **PRODUCT** retornou "invalid argument" nos 3 envios; as fotos de produto foram como ADDITIONAL.
+- Enviado: capa (WA0026 real), logo, equipe (estúdio e selfie), ela trabalhando (2), unhas recriadas (4) e produtos (3, em Adicional). Interior e Fachada: nada, de propósito.
+- O Windsor é um conector por conta do Claude: para separar clientes, criar login do Windsor com o e-mail do cliente (Trial de 30 dias) e trocar a conta do conector em Configurações → Conectores durante o envio; depois voltar à própria conta.
+- No site, as 4 fotos de galeria recriadas já substituem as antigas (`gallery-natural-finish`, `real-beauty`, `details`, `professional-care`). Faltam recriar as outras 4 da galeria (`transparencia`, `sophisticated`, `classic-elegance`, `art-technique`).
+- Pendente: pedir à Josi fotos reais (esmaltes, produtos de limpeza, bancada, alongamento, blindagem, spa dos pés, atendimento).
