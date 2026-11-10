@@ -42,8 +42,8 @@ Logo: o reenvio via API também não apareceu. O arquivo está OK (1280x1280, RG
 ## Pendências
 1. **Voltar o conector do Windsor para a conta do Richard** (claude.ai → Configurações → Conectores → Windsor.ai). Enquanto estiver na da Josi, o Instagram e o Search Console dele não aparecem em nenhum projeto.
 2. Perguntei se envia o retrato com o leque (`experience-josi-leque`) como foto de Equipe. Aguardando ok. O recorte `perfil.jpg` (WA0012) **não foi enviado**.
-4. Pedir à Josi fotos reais para regerar: esmaltes (cartela/estante), produtos de limpeza e assepsia, bancada organizada, alongamento, blindagem, spa dos pés, atendimento com mãos, cadeira/mesa sem placa nem nome do espaço (Interior). Depois regerar no ChatGPT mantendo os produtos.
-3. Ver a vitrine do site no navegador depois da troca da galeria (só conferi o deploy por tamanho de arquivo).
+3. Pedir à Josi fotos reais para regerar: esmaltes (cartela/estante), produtos de limpeza e assepsia, bancada organizada, alongamento, blindagem, spa dos pés, atendimento com mãos, cadeira/mesa sem placa nem nome do espaço (Interior). Depois regerar no ChatGPT mantendo os produtos.
+4. Ver a vitrine do site no navegador depois da troca da galeria (só conferi o deploy por tamanho de arquivo).
 
 ## Lições do Windsor e do Google
 - Windsor `upload_media` só aceita **URL pública** (JPG/PNG, mín. 250 px, até 5 MB). Atalho: o repo é público, então `https://raw.githubusercontent.com/richardgms/josisouza/69488a9/public/gbp/<arquivo>` serve as 14 fotos sem deploy.

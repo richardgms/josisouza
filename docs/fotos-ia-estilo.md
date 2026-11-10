@@ -43,5 +43,5 @@ Rascunhos e versões intermediárias em `gerados-ia\google-perfil\`; as finais a
 - A categoria **PRODUCT** retornou "invalid argument" nos 3 envios; as fotos de produto foram como ADDITIONAL.
 - Enviado: capa (WA0026 real), logo, equipe (estúdio e selfie), ela trabalhando (2), unhas recriadas (4) e produtos (3, em Adicional). Interior e Fachada: nada, de propósito.
 - O Windsor é um conector por conta do Claude: para separar clientes, criar login do Windsor com o e-mail do cliente (Trial de 30 dias) e trocar a conta do conector em Configurações → Conectores durante o envio; depois voltar à própria conta.
-- No site, as 4 fotos de galeria recriadas já substituem as antigas (`gallery-natural-finish`, `real-beauty`, `details`, `professional-care`). Faltam recriar as outras 4 da galeria (`transparencia`, `sophisticated`, `classic-elegance`, `art-technique`).
+- No site, as 8 fotos da galeria já são versões recriadas (PNGs da 2ª leva em `gerados-ia\galeria-site\`).
 - Pendente: pedir à Josi fotos reais (esmaltes, produtos de limpeza, bancada, alongamento, blindagem, spa dos pés, atendimento).
