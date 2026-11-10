@@ -26,6 +26,9 @@ Regras para recriar fotos de unhas e da Josi (Google Perfil da Empresa, site, re
 - Geometria: retângulo reto, largura constante, aparecendo por inteiro sob todos os dedos. Já saiu livro em "escada" e cortado no indicador; pedir "no steps, no cut-off, no tapering" e conferir.
 - Título curto em português; conferir a grafia na saída.
 
+- **Decisão final do livro:** usar só o **verso** (sem título, texto, código de barras ou número), girado ~15° e saindo um pouco do quadro; assim ninguém consegue pesquisar o livro e descobrir que é IA. Verso **claro** (off-white com raminho de flor) contrasta melhor com unhas vermelhas que o terracota. Escolhido: `unhas-vermelhas-livro-verso-a.png`.
+- Detalhe de fundo natural (objeto pessoal pequeno e desfocado, como uma presilha) aumenta a credibilidade. Veio do ChatGPT, não foi pedido no prompt. Boas práticas gerais: `~/.claude/skills/gerar-imagem/boas-praticas-fotos.md` (compartilhada com Codex e Antigravity).
+
 ## Fluxo
 1. Gerar pela skill `gerar-imagem` (Codex, sem custo de API), 3–4 em paralelo (jobs do PowerShell).
 2. Salvar fora do repo em `Documentos\Josi Souza - Acervo de imagens\gerados-ia\<destino>\`.
