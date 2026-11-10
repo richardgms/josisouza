@@ -35,7 +35,7 @@ Regras para recriar fotos de unhas e da Josi (Google Perfil da Empresa, site, re
 3. Conferir contra a referência, mostrar ao Richard, só então converter/enviar.
 
 ## Lote Google Perfil (nov/2026)
-Aprovados: unhas-francesinha, unhas-nude-curtas-v2, unhas-nude-glitter-v2, unhas-vermelhas-livro-v2 (e a versão `-texto` com sobreposição do livro) em `gerados-ia\google-perfil\`. Envio ao perfil pendente.
+Rascunhos e versões intermediárias em `gerados-ia\google-perfil\`; as finais aprovadas e enviadas estão em `gerados-ia\google-perfil-final\` (ver seção abaixo).
 
 ## Envio ao Google Perfil da Empresa (feito em 2026-11-10)
 - Enviado via Windsor (`google_my_business`, ação `upload_media`) usando URLs públicas temporárias em `public/gbp/` do site, removidas depois do envio. As fotos finais ficam em `Documentos\Josi Souza - Acervo de imagens\gerados-ia\google-perfil-final\`.
