@@ -31,6 +31,9 @@ Total registrado pelo Google: 12 fotos de galeria (+ logo). A categoria **PRODUC
 - **Ainda não apareciam** (mas constam como enviadas): `produto-1-josi-com-esmalte` e `produto-esmaltes-cartela`. O Richard vai esperar e avisar. Se não aparecerem, reenviar essas duas (conferir antes com `get_data` na tabela Media, `date_from` = dia do envio; sem data a consulta volta vazia).
 - A tela mostra "7 horas atrás" em todas, mas o Google registrou o envio às 22:01–22:08 UTC (19:01–19:08 em Brasília). Causa desconhecida, parece exibição do Google; não é problema do conector.
 
+## Reenvio (2026-11-10, mais tarde)
+O Richard não viu a logo nem as 2 de produto. A tabela Media listava as 12 fotos (as 2 de produto incluídas), mas **nenhuma linha de LOGO/PROFILE**. Reenviados: `logo.png` como **LOGO** (foi para `media/profile`) e as 2 de produto como ADDITIONAL (IDs novos `CIABIh...`). Se ainda não aparecerem, suspeita é moderação do Google (fotos de IA), não atraso.
+
 ## Pendências
 1. **Voltar o conector do Windsor para a conta do Richard** (claude.ai → Configurações → Conectores → Windsor.ai). Enquanto estiver na da Josi, o Instagram e o Search Console dele não aparecem em nenhum projeto.
 2. Perguntei se envia o retrato com o leque (`experience-josi-leque`) como foto de Equipe. Aguardando ok. O recorte `perfil.jpg` (WA0012) **não foi enviado**.
@@ -39,6 +42,7 @@ Total registrado pelo Google: 12 fotos de galeria (+ logo). A categoria **PRODUC
 5. Ver a vitrine do site no navegador depois da troca da galeria (só conferi o deploy por tamanho de arquivo).
 
 ## Lições do Windsor e do Google
-- Windsor `upload_media` só aceita **URL pública** (JPG/PNG, mín. 250 px, até 5 MB). Sem hospedagem pública não envia.
+- Windsor `upload_media` só aceita **URL pública** (JPG/PNG, mín. 250 px, até 5 MB). Atalho: o repo é público, então `https://raw.githubusercontent.com/richardgms/josisouza/69488a9/public/gbp/<arquivo>` serve as 14 fotos sem deploy.
+- Trial do Windsor não aceita `force_refresh`; a leitura da tabela Media vem do cache.
 - Logo e perfil dividem o mesmo espaço; PRODUCT falhou; o modo automático do Claude Code bloqueia envio extra fora do que o usuário aprovou (pedir ok específico).
 - A listagem da tabela Media precisa de intervalo de datas que cubra o envio.
