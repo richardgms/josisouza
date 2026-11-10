@@ -12,7 +12,7 @@ Perfil: **Josi Souza - Nail Design** (Windsor: `google_my_business`, local `loca
 4. Artifact de planejamento por categoria: https://claude.ai/artifact/Pp3F6gx8GToGETCWX23ybF (privado; as decisões dele foram aplicadas depois).
 5. Windsor: o conector do Claude é uma conta só. Para separar o cliente, o Richard criou um login do Windsor com o e-mail da Josi (Trial 30 dias) e trocou o conector para essa conta. O Google Meu Negócio dela ficou conectado.
 6. Hospedagem temporária em `public/gbp/` do site (commit `69488a9`), envio ao Google por URL pública, remoção da pasta (commit `7f758d9`). As imagens ficaram no histórico do Git.
-7. No site, as 4 fotos da galeria recriadas substituíram as antigas (commit `875bd01`): `gallery-natural-finish`, `gallery-real-beauty`, `gallery-details`, `gallery-professional-care` (WebP 1000x1250, 4:5).
+7. No site, as 8 fotos da galeria foram recriadas: primeiro 4 substituíram as antigas (commit `875bd01`): `gallery-natural-finish`, `gallery-real-beauty`, `gallery-details`, `gallery-professional-care` (WebP 1000x1250, 4:5). Depois as outras 4 (`transparencia`, `sophisticated`, `classic-elegance`, `art-technique`), aprovadas na 1ª rodada; PNGs em `gerados-ia\galeria-site\`.
 
 ## Fotos enviadas ao Google (via `upload_media`)
 | Categoria no Google | Arquivo | Origem |
@@ -42,9 +42,8 @@ Logo: o reenvio via API também não apareceu. O arquivo está OK (1280x1280, RG
 ## Pendências
 1. **Voltar o conector do Windsor para a conta do Richard** (claude.ai → Configurações → Conectores → Windsor.ai). Enquanto estiver na da Josi, o Instagram e o Search Console dele não aparecem em nenhum projeto.
 2. Perguntei se envia o retrato com o leque (`experience-josi-leque`) como foto de Equipe. Aguardando ok. O recorte `perfil.jpg` (WA0012) **não foi enviado**.
-3. Recriar com IA as outras 4 fotos da galeria do site (`transparencia`, `sophisticated`, `classic-elegance`, `art-technique`) e trocar no site (mesma regra de 4:5 e mesmo nome de arquivo).
 4. Pedir à Josi fotos reais para regerar: esmaltes (cartela/estante), produtos de limpeza e assepsia, bancada organizada, alongamento, blindagem, spa dos pés, atendimento com mãos, cadeira/mesa sem placa nem nome do espaço (Interior). Depois regerar no ChatGPT mantendo os produtos.
-5. Ver a vitrine do site no navegador depois da troca da galeria (só conferi o deploy por tamanho de arquivo).
+3. Ver a vitrine do site no navegador depois da troca da galeria (só conferi o deploy por tamanho de arquivo).
 
 ## Lições do Windsor e do Google
 - Windsor `upload_media` só aceita **URL pública** (JPG/PNG, mín. 250 px, até 5 MB). Atalho: o repo é público, então `https://raw.githubusercontent.com/richardgms/josisouza/69488a9/public/gbp/<arquivo>` serve as 14 fotos sem deploy.
